@@ -11,7 +11,7 @@ public class LandingPage extends PageBase {
      *  Detecting Elements from the UI in Landing Page
      */
 
-    @FindBy(xpath = "//a[@class='login']")
+    @FindBy(xpath = "//a[@class = 'login']")
     public WebElement buttonSignIn;
 
      public void clickOnSignIn()

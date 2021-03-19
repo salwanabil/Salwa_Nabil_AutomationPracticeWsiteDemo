@@ -27,7 +27,6 @@ public class ShoppingTest extends TestBase {
 
         landingPageObj.clickOnSignIn();
         userAccountsPageObj.signInWithEmailAndPassword(loginEmail, loginPassword);
-        System.out.println("Hi + : " + loginEmail + " Logged in");
 
         if (dashboardPageObj.getButtonDresses().isEnabled()){
             JavascriptExecutor executor = (JavascriptExecutor)driver;
@@ -36,7 +35,13 @@ public class ShoppingTest extends TestBase {
 
 
         dashboardPageObj.clickOnSummerDressesFSideMenu();
-        System.out.println("Hi + : clickOnSummerDressesFSideMenu in");
+        dashboardPageObj.checkSummerDresses();
+        dashboardPageObj.checkLargeSize();
+        dashboardPageObj.checkOrangeColor();
+        dashboardPageObj.clickOnShopItemImage();
+        dashboardPageObj.clickOnAddToCart();
+        dashboardPageObj.clickOnProceedToCheckout();
+
 
     }
 }

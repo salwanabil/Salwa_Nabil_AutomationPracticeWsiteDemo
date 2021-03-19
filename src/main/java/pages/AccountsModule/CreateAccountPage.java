@@ -17,7 +17,7 @@ public class CreateAccountPage extends PageBase {
          return lableAUTHENTICATION.getText();
     }
 
-    @FindBy(xpath = "//*[@id=\"noSlide\"]/h1")
+    @FindBy(xpath = "//h3[@class = 'page-subheading']")
     private WebElement lableAUTHENTICATION;
 
     @FindBy(id = "customer_firstname")

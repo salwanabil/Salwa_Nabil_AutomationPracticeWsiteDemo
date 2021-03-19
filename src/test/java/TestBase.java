@@ -46,7 +46,6 @@ public class TestBase {
         }catch (Exception e){
             System.out.println("Error while loading the page waited <60 second and the page didn't completely loaded");
         }
-        //WebDriverWait wait = new WebDriverWait(driver, 10);
 
     }
 
