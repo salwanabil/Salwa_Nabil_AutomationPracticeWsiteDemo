@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Rest Assured apis Test Suite">
     <test verbose="2" preserve-order="true"
-          name="D:/BackUp/Automation/Projects/Automation - Projects/Interview_Automation_Tasks/Salwa_Nabil_AutomationPractice">
+          name="Salwa_Nabil_Rest Assured Pets store apis Test">
         <classes><class name="restassured.DeleteSampleRequest">
         <methods>
             <include name="deleteRequest"/>
