@@ -36,7 +36,7 @@ public class UserLoginTest extends TestBase{
         userAccountsObj.enterEmailAndSignUp(PropertiesReader.getProperty("liveAutomationPractice.properties",
                 "signUpEmail"));
         Assert.assertEquals(createAccountPageObj.getLableAUTHENTICATION(), "CREATE AN ACCOUNT");
-        dashboardPageObj.clickOnSignOut();
+        //dashboardPageObj.clickOnSignOut();
     }
 
     /*
@@ -51,7 +51,7 @@ public class UserLoginTest extends TestBase{
                 fakerObj.getFakerCity(),"New York",fakerObj.getFakerZipCode(),
                 fakerObj.getFakerMobilePhone(),fakerObj.getFakerAddressAlias());
         //Assert.assertEquals(createAccountPageObj.getLableAUTHENTICATION(), "My account");
-        dashboardPageObj.clickOnSignOut();
+        //dashboardPageObj.clickOnSignOut();
     }
 
     /*

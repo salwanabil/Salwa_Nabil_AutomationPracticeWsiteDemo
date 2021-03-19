@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rest Assured apis Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="D:/BackUp/Automation/Projects/Automation - Projects/Interview_Automation_Tasks/Salwa_Nabil_AutomationPractice">
+        <classes><class name="restassured.DeleteSampleRequest">
+        <methods>
+            <include name="deleteRequest"/>
+        </methods></class>
+        <class name="restassured.GetSampleRequest">
+            <methods><include name="getRequestWithQueryParam"/></methods>
+        </class>
+        <class name="restassured.PostSampleRequest">
+            <methods><include name="postRequest"/></methods>
+        </class>
+        <class name="restassured.PutSampleRequest">
+            <methods><include name="putRequest"/></methods>
+        </class>
+    </classes>
+    </test>
 
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="D:/BackUp/Automation/Projects/Automation - Projects/Interview_Automation_Tasks/Salwa_Nabil_AutomationPractice">
+
+    <test verbose="2" preserve-order="true" name="Website Test">
         <parameter name="browser" value="Chrome"></parameter>
         <classes>
             <class name="UserLoginTest"></class>
             <class name="ShoppingTest"></class>
         </classes>
     </test>
+
 </suite>
